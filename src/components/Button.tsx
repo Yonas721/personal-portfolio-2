@@ -2,7 +2,7 @@
 
 const Button = () => {
   return (
-    <div>Button</div>
+    <div className="text-red-500">Button</div>
   )
 }
 
