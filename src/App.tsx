@@ -1,13 +1,12 @@
-import Button from "./components/Button"
+import { FiSend } from "react-icons/fi";
+import Button from "./components/Button";
 
 function App() {
- 
-
   return (
     <>
- <Button/>    
+      <Button text="Say Hello" icon={<FiSend />} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
