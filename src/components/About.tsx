@@ -39,7 +39,7 @@ const About = () => {
           </div>
 
           <p className="max-w-[60%] text-center self-center text-sm/6 text-gray-400 font-medium">
-            FullStack developerm,i create web applications using React,and
+            Fullstack developer,i create web applications using React,and
             laravel, I have experience in building responsive and user-friendly
             interfaces, as well as developing robust backend systems. I am
             passionate about learning new technologies and staying up-to-date
