@@ -1,10 +1,11 @@
-import { FiSend } from "react-icons/fi";
-import Button from "./components/Button";
+import Main from "./components/Main";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <Button text="Say Hello" icon={<FiSend />} />
+      <NavBar />
+      <Main />
     </>
   );
 }

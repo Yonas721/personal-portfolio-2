@@ -7,7 +7,7 @@ interface Props {
 
 const Button = ({ text, icon }: Props) => {
   return (
-    <button className="flex text-white items-center gap-2 border border-2 px-2 py-1 bg-black rounded-lg">
+    <button className="flex text-white items-center gap-2 border-2 px-4 py-2 bg-black rounded-xl">
       {text}
       {icon}
     </button>
