@@ -8,7 +8,7 @@ import AboutCards from "./subcomponents/AboutCards";
 import { TbMedal } from "react-icons/tb";
 const About = () => {
   return (
-    <div className="mt-40 mx-4">
+    <div className="mt-40 mx-4" id="about">
 
 
       <div className="text-center mt-4 ">
