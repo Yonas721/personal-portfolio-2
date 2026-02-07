@@ -1,6 +1,6 @@
-import Project from "./subcomponents/Project"
-import Finance from "../assets/projects/finance-A.jpg"
-import Medi from "../assets/projects/medi-1.jpg"
+import Project from "./subcomponents/Project";
+import Finance from "../assets/projects/finance-A.jpg";
+import Medi from "../assets/projects/medi-1.jpg";
 const Projects = () => {
   return (
     <div className="my-20" id="projects">
@@ -33,24 +33,34 @@ const Projects = () => {
       <div className=" flex gap-26 justify-center py-4 ">
         <div className="flex flex-col gap-10">
           <div className="p-2">
-            <Project img={Finance} title="Finance App" />
+            <Project
+              id={1}
+              img={Finance}
+              title="Fiance Management System"
+              alt="finance-app"
+            />
           </div>
           <div className="p-2">
-            <Project img={Finance} title="hi" />
+            <Project img={Finance} title="hi" alt="finance-app" id={2} />
           </div>
         </div>
 
         <div className=" flex flex-col gap-10">
           <div className="p-2">
-            <Project img={Medi} title="Medi App" />
+            <Project
+              img={Medi}
+              title="MediConnect Integrated Healhtcare Solutions"
+              alt="finance-app"
+              id={3}
+            />
           </div>
           <div className="p-2">
-            <Project img={Medi} title="hi" />
+            <Project img={Medi} title="hi" alt="finance-app" id={4} />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Projects
+export default Projects;
