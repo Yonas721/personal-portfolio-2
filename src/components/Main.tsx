@@ -5,7 +5,10 @@ import Button from "./Button";
 import yonas from "../assets/yonas.jpg";
 const Main = () => {
   return (
-    <main className="flex  px-6 py-4  my-12 max-w-[80%] mx-auto gap-4">
+    <main
+      className="flex  px-6 py-4  my-12 max-w-[80%] mx-auto gap-4"
+      id="home"
+    >
       <div className="flex flex-col justify-around items-center  gap-8 ">
         <h1 className="font-bold text-5xl text-wrap">Yonas Jemberu ✋</h1>
         <p className="flex items-center">
@@ -20,7 +23,7 @@ const Main = () => {
         <Button text="Say Hello" icon={<FiSend />} />
 
         <a
-          href="#"
+          href="#contact"
           className="flex items-center gap-2 border rounded-md p-1 mt-4 self-start font-bold"
         >
           <CiDesktopMouse2 />

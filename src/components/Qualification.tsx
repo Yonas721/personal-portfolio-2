@@ -4,7 +4,7 @@ import { IoBagHandle } from "react-icons/io5";
 
 const Qualification = () => {
   return (
-    <div>
+    <div id="qualifications">
       <div className="text-center mt-26">
         <h2 className="font-bold text-xl">Qualifications</h2>
         <h4 className="text-sm mt-2">My Personal Journey</h4>
