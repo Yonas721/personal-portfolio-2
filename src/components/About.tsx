@@ -9,8 +9,6 @@ import { TbMedal } from "react-icons/tb";
 const About = () => {
   return (
     <div className="mt-40 mx-4" id="about">
-
-
       <div className="text-center mt-4 ">
         <h2 className="font-bold text-xl">About Me</h2>
         <h4 className="text-sm mt-2">My introduction</h4>
@@ -25,10 +23,10 @@ const About = () => {
 
         <div className="flex flex-col gap-8 p-4">
           <div className="flex justify-around ">
-            <AboutCards title="Exprience" count="8+ years" icon={<TbMedal />} />
+            <AboutCards title="Exprience" count="3+ years" icon={<TbMedal />} />
             <AboutCards
               title="Completed"
-              count="40+ projects"
+              count="8+ projects"
               icon={<MdOutlineIncompleteCircle />}
             />
             <AboutCards
@@ -47,7 +45,12 @@ const About = () => {
             with others to create innovative solutions.
           </p>
 
-          <a href="#" className="mt-8 ml-25">
+          <a
+          arial-label="yonas's cv"
+            href="/public/PermanentCV.pdf"
+            download="PermanentCV.pdf"
+            className="mt-8 ml-25"
+          >
             <Button text="Download CV" icon={<IoDocumentAttachOutline />} />
           </a>
         </div>
