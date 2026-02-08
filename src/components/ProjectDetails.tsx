@@ -21,7 +21,7 @@ const ProjectDetails = () => {
             {project.techs.map((tech) => (
               <li
                 key={tech}
-                className="border border-gray-300 rounded-md px-2 py-1 text-gray-500"
+                className="border border-gray-300 rounded-md px-2 py-1 text-gray-500 text-sm"
               >
                 {tech}
               </li>
