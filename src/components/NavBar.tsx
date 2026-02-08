@@ -1,8 +1,14 @@
+import Irgib from "../assets/irgib.png";
+
 const NavBar = () => {
   return (
     <nav className="flex justify-around py-3  my-4 mx-2">
-     <a href="#home"> <h1 className="center font-medium px-2 py-1">Yonas</h1>
-     </a>
+      <a href="#home">
+        {" "}
+        <h1 className="w-12  px-2 py-1">
+          <img src={Irgib} alt="yonas's logo" />
+        </h1>
+      </a>
       <ul className="flex gap-4 px-2 text-sm  items-center">
         <li>
           <a href="#home"> Home</a>

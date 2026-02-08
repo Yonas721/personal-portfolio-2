@@ -24,7 +24,7 @@ const Main = () => {
 
         <a
           href="#contact"
-          className="flex items-center gap-2 border rounded-md p-1 mt-4 self-start font-bold"
+          className="flex items-center gap-2 border rounded-md p-1 mt-4 self-start ml-20 font-bold"
         >
           <CiDesktopMouse2 />
           <p className="text-sm font-medium">Scroll down</p>
