@@ -41,7 +41,12 @@ const Projects = () => {
             />
           </div>
           <div className="p-2">
-            <Project img={Finance} title="hi" alt="finance-app" id={2} />
+            <Project
+              img={Medi}
+              alt="medi"
+              id={2}
+              title="Mediconnect integrated Healthcare Solution"
+            />
           </div>
         </div>
 
@@ -49,13 +54,13 @@ const Projects = () => {
           <div className="p-2">
             <Project
               img={Medi}
-              title="MediConnect Integrated Healhtcare Solutions"
+              title="Belhuman Hair Website"
               alt="finance-app"
-              id={3}
+              id={2}
             />
           </div>
           <div className="p-2">
-            <Project img={Medi} title="hi" alt="finance-app" id={4} />
+            <Project img={Medi} title="Video Game Site" alt="finance-app" id={4} />
           </div>
         </div>
       </div>
