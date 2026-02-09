@@ -1,9 +1,39 @@
+import emailjs from "@emailjs/browser";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import SocialMedia from "./subcomponents/SocialMedia";
 import { FiSend } from "react-icons/fi";
 import { CiCircleChevUp } from "react-icons/ci";
+import { useRef } from "react";
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (!form.current) {
+      alert("Form not found");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_aucf31g", // Replace with your Service ID
+        "template_1uik66z", // Replace with your Template ID
+        form.current,
+        "wnwfWpaPAQa3VtlPB", // Replace with your Public Key
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          e.target.reset(); // Clear form
+        },
+        (error) => {
+          alert("Failed to send: " + error.text);
+        },
+      );
+  };
+
   return (
     <div className="mt-30 px-4" id="contact">
       <div className="text-center mt-26">
@@ -33,7 +63,11 @@ const Contact = () => {
             Write me about your project
           </p>
 
-          <form className="flex flex-col gap-6 mt-5 rounded-lg px-6 py-8 md:px-10 md:py-12 shadow-sm">
+          <form
+            className="flex flex-col gap-6 mt-5 rounded-lg px-6 py-8 md:px-10 md:py-12 shadow-sm"
+            ref={form}
+            onSubmit={sendEmail}
+          >
             {/* Name Field */}
             <div className="relative">
               <input
@@ -74,7 +108,7 @@ const Contact = () => {
                 name="project"
                 id="project"
                 rows={5}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all resize-y min-h-[120px] max-w-80"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all resize-y min-h-30 max-w-80"
                 placeholder=" "
               />
               <label
@@ -97,7 +131,11 @@ const Contact = () => {
         </div>
 
         <div className="self-end mb-15">
-          <a href="#home" className="font-bold text-3xl ">
+          <a
+            href="#home"
+            className="font-bold text-3xl aria"
+            arial-label="text"
+          >
             <CiCircleChevUp />
           </a>
         </div>
