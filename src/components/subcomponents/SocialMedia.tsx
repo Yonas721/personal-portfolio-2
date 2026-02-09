@@ -15,7 +15,7 @@ const SocialMedia = ({ icon, address, title }: Props) => {
     <a
       href={addressModified}
       target="_blank"
-      className="bg-white border border-gray-200 flex flex-col items-center p-6 max-w-50 rounded-md "
+      className="bg-white border border-gray-200 flex flex-col items-center p-4 sm:p-6 w-full max-w-60 sm:max-w-50 rounded-md"
     >
       <div>{icon}</div>
       <div className="font-bold text-base">{title}</div>

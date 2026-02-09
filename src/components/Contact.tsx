@@ -35,15 +35,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-30 px-4" id="contact">
-      <div className="text-center mt-26">
+    <div className="mt-20 md:mt-30 px-4" id="contact">
+      <div className="text-center mt-16 md:mt-26">
         <h2 className="font-bold text-xl">Contact</h2>
         <h4 className="text-sm mt-2">Get in Touch</h4>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center gap-40 ml-40  mt-10">
+      <div className="flex flex-col md:flex-row justify-center gap-10 md:gap-20 lg:gap-40 mx-auto max-w-5xl mt-10">
         {/* Left Column - Contact Info */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6 md:gap-8 items-center md:items-start">
           <p className="text-lg font-medium">Talk to me</p>
           <SocialMedia
             icon={<MdMarkEmailRead />}
@@ -59,12 +59,12 @@ const Contact = () => {
 
         {/* Right Column - Contact Form */}
         <div className="w-full md:w-1/2">
-          <p className="text-lg font-medium mb-6">
+          <p className="text-lg font-medium mb-6 text-center md:text-left">
             Write me about your project
           </p>
 
           <form
-            className="flex flex-col gap-6 mt-5 rounded-lg px-6 py-8 md:px-10 md:py-12 shadow-sm"
+            className="flex flex-col gap-6 mt-5 rounded-lg px-4 sm:px-6 py-6 md:px-10 md:py-12 shadow-sm"
             ref={form}
             onSubmit={sendEmail}
           >
@@ -74,7 +74,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 id="name"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all max-w-80"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all"
                 placeholder=" "
               />
               <label
@@ -91,7 +91,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all max-w-80"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all"
                 placeholder=" "
               />
               <label
@@ -108,7 +108,7 @@ const Contact = () => {
                 name="project"
                 id="project"
                 rows={5}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all resize-y min-h-30 max-w-80"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all resize-y min-h-30"
                 placeholder=" "
               />
               <label
@@ -129,16 +129,17 @@ const Contact = () => {
             </button>
           </form>
         </div>
+      </div>
 
-        <div className="self-end mb-15">
-          <a
-            href="#home"
-            className="font-bold text-3xl aria"
-            arial-label="text"
-          >
-            <CiCircleChevUp />
-          </a>
-        </div>
+      {/* Scroll to top */}
+      <div className="flex justify-center md:justify-end mt-10 mr-0 md:mr-10 mb-8">
+        <a
+          href="#home"
+          className="font-bold text-3xl"
+          aria-label="Scroll to top"
+        >
+          <CiCircleChevUp />
+        </a>
       </div>
     </div>
   );

@@ -6,17 +6,19 @@ import yonas from "../assets/yonas.jpg";
 const Main = () => {
   return (
     <main
-      className="flex  px-6 py-4  my-12 max-w-[80%] mx-auto gap-4"
+      className="flex flex-col-reverse md:flex-row px-4 sm:px-6 py-4 my-8 md:my-12 max-w-[90%] md:max-w-[80%] mx-auto gap-8 md:gap-4 items-center"
       id="home"
     >
-      <div className="flex flex-col justify-around items-center  gap-8 ">
-        <h1 className="font-bold text-5xl text-wrap">Yonas Jemberu ✋</h1>
+      <div className="flex flex-col justify-around items-center gap-6 md:gap-8">
+        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl text-center md:text-left text-wrap">
+          Yonas Jemberu ✋
+        </h1>
         <p className="flex items-center">
           <hr className="w-12 text-gray-500" />
           <p className="ml-2 pb-1">Software Engineer</p>
         </p>
 
-        <p className="text-gray-500 text-sm max-w-[75%] text-center">
+        <p className="text-gray-500 text-sm max-w-[90%] md:max-w-[75%] text-center">
           I am creative software engineer in Addis Ababa,and I'm very passionate
           and dedicated in my work.
         </p>
@@ -31,7 +33,7 @@ const Main = () => {
 
         <a
           href="#contact"
-          className="flex items-center gap-2 border rounded-md p-1 mt-4 self-start ml-20 font-bold"
+          className="flex items-center gap-2 border rounded-md p-1 mt-4 self-center md:self-start md:ml-20 font-bold"
         >
           <CiDesktopMouse2 />
           <p className="text-sm font-medium">Scroll down</p>
@@ -42,7 +44,7 @@ const Main = () => {
       <img
         src={yonas}
         alt="yonas jemberu's photo"
-        className="w-50  h-50 rounded-full"
+        className="w-40 h-40 md:w-50 md:h-50 rounded-full"
       />
     </main>
   );

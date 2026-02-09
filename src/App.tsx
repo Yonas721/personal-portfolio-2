@@ -6,7 +6,7 @@ import ProjectDetails from "./components/ProjectDetails";
 
 function App() {
 
-  
+
 
 
 

@@ -12,7 +12,7 @@ interface Props {
 const Project = ({ img, title, id, alt }: Props) => {
   return (
     <div className="rounded-md bg-white border border-gray-200">
-      <img className="w-85" src={img} alt={alt} />
+      <img className="w-full" src={img} alt={alt} />
       <p className="font-bold text-sm mt-2 ml-2">{title}</p>
 
       <Link to={`/projects/${id}`}>
