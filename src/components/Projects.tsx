@@ -1,6 +1,8 @@
 import Project from "./subcomponents/Project";
-import Finance from "../assets/projects/finance-A.jpg";
-import Medi from "../assets/projects/medi-1.jpg";
+import Finance from "/public/projects/finance-A.jpg";
+import Medi from "/public/projects/medi-1.jpg";
+import Bel from "/public/projects/bel2.png";
+import Game from "/public/projects/game1.png";
 const Projects = () => {
   return (
     <div className="my-20" id="projects">
@@ -53,14 +55,14 @@ const Projects = () => {
         <div className=" flex flex-col gap-10">
           <div className="p-2">
             <Project
-              img={Medi}
+              img={Bel}
               title="Belhuman Hair Website"
               alt="finance-app"
-              id={2}
+              id={3}
             />
           </div>
           <div className="p-2">
-            <Project img={Medi} title="Video Game Site" alt="finance-app" id={4} />
+            <Project img={Game} title="Video Game Site" alt="finance-app" id={4} />
           </div>
         </div>
       </div>
