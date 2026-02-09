@@ -20,7 +20,14 @@ const Main = () => {
           I am creative software engineer in Addis Ababa,and I'm very passionate
           and dedicated in my work.
         </p>
-        <Button text="Say Hello" icon={<FiSend />} />
+        <a
+          href="https://www.linkedin.com/in/yonas-jemberu-856b352b8/"
+          className="flex text-white items-center gap-2 border-2 px-4 py-2 bg-black rounded-xl"
+          target="_blank"
+        >
+          <p>Say Hello</p>
+          <FiSend className="self-center" />
+        </a>
 
         <a
           href="#contact"

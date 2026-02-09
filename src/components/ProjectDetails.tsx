@@ -27,7 +27,7 @@ const ProjectDetails = () => {
 
         <div>
           <h3 className="font-bold text-gray-500">My Role</h3>
-          <p className="mt-3">{project.description}</p>
+          <p className="mt-3 text-gray-500 text-sm/7">{project.description}</p>
 
           <ul className="flex mt-5  justify-around py-2">
             {project.techs.map((tech) => (
@@ -44,7 +44,8 @@ const ProjectDetails = () => {
             <p className="font-bold text-gray-500">Github Repo:</p>
             <a
               href={project.github}
-              className="mx-18 border border-gray-200 px-2 py-1 text-gray-500 w-30 rounded-md target=_blank flex  gap-2"
+              target="_blank"
+              className="mx-18 border border-gray-200 px-2 py-1 text-gray-500 w-30 rounded-md  flex  gap-2"
             >
               <p>Click here</p>
               <IoEyeOutline className="self-center mt-1" />
