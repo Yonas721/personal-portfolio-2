@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { IoEyeOutline } from "react-icons/io5";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -14,7 +15,9 @@ const ProjectDetails = () => {
     <div className="flex flex-col">
       <div className="flex gap-20  px-4 py-8 mx-6 my-8">
         <div className="flex flex-col">
-          <h3 className="font-bold text-gray-500 mb-3 mx-4 text-lg">{project.title}</h3>
+          <h3 className="font-bold text-gray-500 mb-3 mx-4 text-lg">
+            {project.title}
+          </h3>
           <img
             src={selectedImage ? selectedImage : project.img}
             alt=""
@@ -36,10 +39,21 @@ const ProjectDetails = () => {
               </li>
             ))}
           </ul>
+
+          <div className="flex flex-col gap-2 mt-5">
+            <p className="font-bold text-gray-500">Github Repo:</p>
+            <a
+              href={project.github}
+              className="mx-18 border border-gray-200 px-2 py-1 text-gray-500 w-30 rounded-md target=_blank flex  gap-2"
+            >
+              <p>Click here</p>
+              <IoEyeOutline className="self-center mt-1" />
+            </a>
+          </div>
         </div>
       </div>
 
-      <ul className="flex justify-between gap-10 mx-10 mt-5 overflow-hidden">
+      <ul className="flex justify-between gap-10 mx-10 mt-2 overflow-hidden">
         {project?.images?.map((p, index) => (
           <motion.li
             key={p}
