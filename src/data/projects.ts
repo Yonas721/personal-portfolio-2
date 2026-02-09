@@ -38,7 +38,7 @@ export const projects = [
     id: 2,
     title: "MediConnect Integrated Healhtcare Solutions",
     type: "back",
-    img: "/public/projects/medi1.jpg",
+    img: "/public/projects/medi-1.jpg",
     techs: ["Laravel", "postman", "git", "MySQL"],
     description:
       "For MediConnect, I developed a secure and scalable healthcare management platform using Laravel and MySQL. The system centralized financial operations, implementing core features for patient billing, payment processing, and real-time transaction history tracking. Engineered to handle up to 1,000 daily transactions efficiently, the application was optimized for low latency and reliable performance within the integrated healthcare ecosystem.",
