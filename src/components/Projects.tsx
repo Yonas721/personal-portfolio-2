@@ -45,7 +45,7 @@ const Projects = () => {
           <div className="p-2">
             <Project
               img={Medi}
-              alt="medi"
+              alt="mediconnect web app"
               id={2}
               title="Mediconnect integrated Healthcare Solution"
             />
@@ -57,7 +57,7 @@ const Projects = () => {
             <Project
               img={Bel}
               title="Belhuman Hair Website"
-              alt="finance-app"
+              alt="bel human hair"
               id={3}
             />
           </div>
