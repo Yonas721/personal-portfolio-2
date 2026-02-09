@@ -29,7 +29,7 @@ export const projects = [
     techs: ["Laravel", "postman", "git", "MySQL"],
     github: "https://github.com/Yonas721/Finance_Managment_Project",
     description:
-      "As a lead developer, I architected and delivered a monolithic web application using Laravel, featuring robust RESTful APIs integrated with a MySQL database. I optimized complex queries and implemented secure data handling to ensure high performance and reliability. To meet core business needs, I engineered key integrations, including the Chapa payment gateway for scalable e-commerce transactions, and configured email services via Mailgun and SendGrid for automated user communications. Leading a team of three developers in an agile environment, I successfully coordinated sprints to deliver features on schedule and within budget.",
+      "As a lead developer, I architected and delivered a monolithic web application using Laravel, featuring robust RESTful APIs integrated with a MySQL database. I optimized complex queries and implemented secure data handling to ensure high performance and reliability. To meet core business needs, I engineered key integrations, including the Chapa payment gateway , and configured email services via MailTrao for automated user communications. Leading a team of three developers in an agile environment, I successfully coordinated sprints to deliver features on schedule and within budget.",
 
     alt: "finance project image",
 
