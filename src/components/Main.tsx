@@ -1,7 +1,6 @@
 import { FiSend } from "react-icons/fi";
 import { CiDesktopMouse2 } from "react-icons/ci";
 import { FaArrowDown } from "react-icons/fa";
-import Button from "./Button";
 import yonas from "../assets/yonas.jpg";
 const Main = () => {
   return (
@@ -28,7 +27,7 @@ const Main = () => {
           target="_blank"
         >
           <p>Say Hello</p>
-          <FiSend className="self-center" />
+          <span className="self-center"><FiSend /></span>
         </a>
 
         <a

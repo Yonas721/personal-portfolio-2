@@ -9,7 +9,7 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const [selectedImage, setSelectedImage] = useState("");
 
-  const project = projects.find((p) => p.id === parseInt(id));
+  const project = projects.find((p) => p.id === parseInt(id ?? ""));
   if (!project) return "project not found!";
   return (
     <div className="flex flex-col px-4 sm:px-6">
@@ -21,7 +21,7 @@ const ProjectDetails = () => {
           <img
             src={selectedImage ? selectedImage : project.img}
             alt=""
-            className="w-full md:max-w-150 border border-gray-200 rounded-md"
+            className="w-full md:max-w-400 border border-gray-200 rounded-md"
           />
         </div>
 
@@ -40,16 +40,36 @@ const ProjectDetails = () => {
             ))}
           </ul>
 
-          <div className="flex flex-col gap-2 mt-5">
-            <p className="font-bold text-gray-500">Github Repo:</p>
-            <a
-              href={project.github}
-              target="_blank"
-              className="border border-gray-200 px-2 py-1 text-gray-500 w-30 rounded-md flex gap-2"
-            >
-              <p>Click here</p>
-              <IoEyeOutline className="self-center mt-1" />
-            </a>
+          <div className="flex gap-8">
+            <div className="flex flex-col gap-2 mt-5">
+              <p className="font-bold text-gray-500">Github Repo:</p>
+              <a
+                href={project.github}
+                target="_blank"
+                className="border border-gray-200 px-2 py-1 text-gray-500 w-30 rounded-md flex gap-2"
+              >
+                <p>Click here</p>
+                <span className="self-center mt-1"><IoEyeOutline /></span>
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-2 mt-5">
+              {project.view ? (
+                <>
+                  <p className="font-bold text-gray-500">Live Demo:</p>
+                  <a
+                    href={project.view}
+                    target="_blank"
+                    className="border border-gray-200 px-2 py-1 text-gray-500 w-30 rounded-md flex gap-2"
+                  >
+                    <p>Click here</p>
+                    <span className="self-center mt-1"><IoEyeOutline /></span>
+                  </a>
+                </>
+              ) : (
+                ""
+              )}
+            </div>
           </div>
         </div>
       </div>

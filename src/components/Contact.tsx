@@ -8,7 +8,7 @@ import { useRef } from "react";
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!form.current) {
@@ -26,7 +26,7 @@ const Contact = () => {
       .then(
         () => {
           alert("Message sent successfully!");
-          e.target.reset(); // Clear form
+          (e.target as HTMLFormElement).reset(); // Clear form
         },
         (error) => {
           alert("Failed to send: " + error.text);

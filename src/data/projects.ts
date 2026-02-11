@@ -9,11 +9,11 @@ import medi3 from "../assets/medi/medi3.jpg";
 import medi4 from "../assets/medi/medi4.jpg";
 import medi5 from "../assets/medi/medi5.jpg";
 
-
-
 import bel from "../assets/bel/bel2.png";
 import bel1 from "../assets/bel/bel3.png";
 import bel2 from "../assets/bel/bel4.png";
+import bel3 from "../assets/bel/bel1.png";
+
 
 import game1 from "../assets/games/game1.png";
 import game2 from "../assets/games/game2.png";
@@ -32,7 +32,7 @@ export const projects = [
       "As a lead developer, I architected and delivered a monolithic web application using Laravel, featuring robust RESTful APIs integrated with a MySQL database. I optimized complex queries and implemented secure data handling to ensure high performance and reliability. To meet core business needs, I engineered key integrations, including the Chapa payment gateway , and configured email services via MailTrao for automated user communications. Leading a team of three developers in an agile environment, I successfully coordinated sprints to deliver features on schedule and within budget.",
 
     alt: "finance project image",
-
+    view: "",
     images: [financeA, finance2, finance3, financeB],
   },
   {
@@ -47,6 +47,7 @@ export const projects = [
       "For MediConnect, I developed a secure and scalable healthcare management platform using Laravel and MySQL. The system centralized financial operations, implementing core features for patient billing, payment processing, and real-time transaction history tracking. Engineered to handle up to 1,000 daily transactions efficiently, the application was optimized for low latency and reliable performance within the integrated healthcare ecosystem.",
 
     alt: "Mediconnect project image",
+    view: "",
     images: [medi1, medi2, medi3, medi4, medi5],
   },
   {
@@ -54,13 +55,14 @@ export const projects = [
     title: "Belhuman Hair",
     type: "front",
     github: "https://github.com/Yonas721/mak-human",
-    img: "/public/projects/bel2.png",
-    techs: ["HTML",  "TS", "React", "TailwindCSS"],
+    img: "/public/projects/bel1.png",
+    techs: ["HTML", "TS", "React", "TailwindCSS"],
     description:
       "Designed and developed a specialized e-commerce platform for a luxury human hair extensions brand. The website showcases an extensive, visually-rich catalog with detailed filtering by hair type, texture, length, and color. Built with a focus on conversion, it integrates secure payment processing, a streamlined checkout, and a mobile-first design to provide a seamless, trustworthy shopping experience for a discerning clientele.",
     alt: "belhuman hair project image",
 
-    images: [bel, bel1, bel2],
+    images: [bel, bel1, bel2,bel3],
+    view: "https://mak-one.vercel.app/",
   },
   {
     id: 4,
@@ -75,5 +77,6 @@ export const projects = [
     alt: "video game website image",
 
     images: [game1, game2, game3, game4],
+    view: "https://video-game-site-six.vercel.app/",
   },
 ];

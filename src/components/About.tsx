@@ -3,7 +3,7 @@ import { MdOutlineIncompleteCircle } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 
 import Button from "./Button";
-import main from "../assets/main.jpg";
+import devIllustration from "../assets/developer-illustration.svg";
 import AboutCards from "./subcomponents/AboutCards";
 import { TbMedal } from "react-icons/tb";
 const About = () => {
@@ -16,9 +16,9 @@ const About = () => {
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-3 my-8 px-4 md:px-10 items-center">
         <img
-          src={main}
-          alt="yonas jemberu's photo"
-          className="h-60 md:h-80 self-center rounded-md"
+          src={devIllustration}
+          alt="developer workspace illustration"
+          className="h-60 md:h-80 self-center"
         />
 
         <div className="flex flex-col gap-6 md:gap-8 p-4">

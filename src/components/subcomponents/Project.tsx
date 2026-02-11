@@ -1,12 +1,10 @@
-import type { ReactNode } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 interface Props {
   id: number;
-  img: ReactNode | null;
+  img: string;
   title: string;
-
   alt: string;
 }
 const Project = ({ img, title, id, alt }: Props) => {
@@ -17,7 +15,7 @@ const Project = ({ img, title, id, alt }: Props) => {
 
       <Link to={`/projects/${id}`}>
         <p className="flex items-center gap-2 w-20  text-sm justify-center text-gray-400 mt-4">
-          Demo
+          Details
           <FaArrowRight />
         </p>
       </Link>
